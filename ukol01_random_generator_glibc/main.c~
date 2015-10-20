@@ -11,7 +11,7 @@ int main(void)
   memset(randomStateBuffer, 0, sizeof(randomStateBuffer));
   memset(&randData, 0, sizeof(struct random_data));
   initstate_r(seed_number, randomStateBuffer,sizeof(randomStateBuffer), &randData);
-  printf("%d\n", seed_number);
+  printf("%d", seed_number);
   
   return 0;
 }
